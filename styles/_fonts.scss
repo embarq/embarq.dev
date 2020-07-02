@@ -1,0 +1,43 @@
+$primaryFont: (
+  (normal, 200, 'Montserrat-Thin'),
+  (italic, 200, 'Montserrat-ThinItalic'),
+  (normal, 300, 'Montserrat-Light'),
+  (italic, 300, 'Montserrat-LightItalic'),
+  (italic, 400, 'Montserrat-Italic'),
+  (normal, 400, 'Montserrat-Regular'),
+  (normal, 500, 'Montserrat-Medium'),
+  (italic, 500, 'Montserrat-MediumItalic'),
+  (normal, 700, 'Montserrat-Bold'),
+  (italic, 700, 'Montserrat-BoldItalic')
+);
+
+@each $fontStyle, $fontWeight, $fontName in $primaryFont {
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("/fonts-montserrat/#{ $fontName }.ttf") format("truetype");
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+    font-display: swap;
+  }
+}
+
+$secondaryFont: (
+  (normal, 300, 'Roboto-Light'),
+  (italic, 300, 'Roboto-LightItalic'),
+  (normal, 400, 'Roboto-Regular'),
+  (italic, 400, 'Roboto-Italic'),
+  (normal, 500, 'Roboto-Medium'),
+  (italic, 500, 'Roboto-MediumItalic'),
+  (normal, 700, 'Roboto-Bold'),
+  (italic, 700, 'Roboto-BoldItalic')
+);
+
+@each $fontStyle, $fontWeight, $fontName in $secondaryFont {
+  @font-face {
+    font-family: 'Roboto';
+    src: url("/fonts-roboto/#{ $fontName }.ttf") format("truetype");
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+    font-display: swap;
+  }
+}

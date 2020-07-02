@@ -1,0 +1,31 @@
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 321px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  hd: 1360px,
+  wx: 1440px,
+  hdp: 1600px,
+  fhd: 1920px
+);
+
+$primaryFont: 'Montserrat';
+$secondaryFont: 'Roboto';
+
+$colors: (
+  dark: #444444,
+  darken: #222222,
+  black: #000000,
+  light-gray: #E5E5E5,
+  light: #ECECEC,
+  white: #FFFFFF,
+  primary: #1ABC9C
+);
+
+$layout: (
+  sm: 100%,
+  md: 730px
+)
