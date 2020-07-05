@@ -24,6 +24,7 @@ const Layout: React.FC<Props> = ({ children, title = 'embarq.dev' }) => (<>
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
     <meta name="theme-color" content="#333333" />
+    <meta name="description" content="Fullstack Software developer building solid solutions with Javascript,React,Angular,NodeJs,RxJS. Blogging about amazing tech-stuff" />
   </Head>
   <header className={styles.header}>
     <Link href="/">
