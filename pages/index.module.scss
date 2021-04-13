@@ -15,7 +15,7 @@
 .well {
   background-color: mixins.color(white);
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 2rem 1.5rem;
 
   @include mixins.media-breakpoint-up(md) {
@@ -25,7 +25,7 @@
 }
 
 .homeSection {
-  h1, h2 {
+  h1, h2, h3, h4 {
     font-weight: normal;
   }
 
@@ -35,12 +35,20 @@
   }
 
   h2 {
-    margin-bottom: mixins.rem(48px);
+    margin-bottom: mixins.rem(32px);
+  }
+
+  h3 {
+    margin-bottom: mixins.rem(18px);
   }
 
   p {
     margin-bottom: mixins.rem(24px);
     font-size: mixins.rem(16px);
     line-height: mixins.rem(24px);
+  }
+
+  ul li + li {
+    margin-top: 1rem;
   }
 }
